@@ -1,3 +1,7 @@
+" Tab size
+set tabstop=2
+set shiftwidth=0
+
 " Misc globals
 set showcmd
 
@@ -18,14 +22,15 @@ let mapleader="\<Space>"
 nmap <Leader>fed ;e ~/.config/nvim/init.vim<CR>
 nmap <Leader>feR ;so ~/.config/nvim/init.vim<CR>
 nmap <Leader>fej ;e ~/.config/nvim/rplugin/node/jpstone/index.js<CR>
-nnoremap <Leader>ww <C-w>w
+nmap <Leader>fem ;e ~/.local/share/nvim/rplugin.vim<CR>
 nmap <Leader>bb ;bn<CR>
 nmap <Leader>tt ;NERDTreeToggle<CR>
+nnoremap <Leader>ww <C-w>w
 
-" - Specify a directory for plugins
-" - For Neovim: ~/.local/share/nvim/plugged
-" - Avoid using standard Vim directory names like 'plugin'
-" Initialize plugin system
+" vim-plugged config
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'scrooloose/nerdtree'
 call plug#end()
+
+" Auto commands
+
